@@ -23,9 +23,9 @@ function GiphyAPI() {
           </ul>
           <h3 className="projectPage__description__title">Giphy API Page</h3>
           <p className="projectPage__description__p">
-            This simple page lets you enter a search term, and submit that term
-            to the giphy API. This returns gifs related to your search for your
-            viewing pleasure.
+            This simple page lets you enter a search term and submit that to the
+            giphy API. This returns gifs related to your query for your viewing
+            pleasure.
           </p>
           <div className="projectPage__description__links">
             <a

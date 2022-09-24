@@ -34,14 +34,14 @@ function TwitterClone() {
           </h3>
           <p className="projectPage__description__p">
             This project is still in progress. You can hit "OFFLINE ACCESS FOR
-            VIEW ONLY" to get passed authentication for now. I wanted to build a
-            full stack application with user athentication. There are two
+            VIEW ONLY" to get past authentication for now. I wanted to build a
+            full stack application with user authentication. There are two
             backend servers. One as the API to the firebase database, and the
-            other for user athentication. The auth server issues issues access
-            token and refresh tokens. Refresh token are saved in the database
-            and are used to create new access tokens when they expire. Access
-            tokens have a short lifespan to increase security. Users can delete
-            refresh tokens by signing out or resetting their password.
+            other for user authentication. The auth server issues access tokens
+            and refresh tokens. Refresh tokens are saved in the database and are
+            used to create new access tokens when they expire. Access tokens
+            have a short lifespan to increase security. Users can delete refresh
+            tokens by signing out or resetting their password.
           </p>
           <div className="projectPage__description__links">
             <a

@@ -24,18 +24,18 @@ function DiceGame() {
           </ul>
           <h3 className="projectPage__description__title">Dice Game Clone</h3>
           <p className="projectPage__description__p">
-            This is a clone of a minigame from the videogame "Cult of the Lamb".
-            This is meant for two players to play locally currently. For rules
-            on:{" "}
+            This is a clone of a mini-game from the video game "Cult of the
+            Lamb". This is meant for two players to play locally. For rules on
+            how to play{" "}
             <a
               link
               target="_blank"
               href="https://www.dualshockers.com/cult-of-the-lamb-knucklebones-tips/"
             >
-              How to play
+              click here.
             </a>{" "}
             This was built in react to get experience on more complex state
-            management in react.
+            management.
           </p>
           <div className="projectPage__description__links">
             <a

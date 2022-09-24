@@ -26,14 +26,14 @@ function Woodcutter() {
           </ul>
           <h3 className="projectPage__description__title">Platformer RPG</h3>
           <p className="projectPage__description__p">
-            This is a fully fledges platforming RPG adventure game in about 6000
-            lines of python. Run through mulitple worlds while jumping and
+            This is a fully fledged platforming RPG adventure game in about 6000
+            lines of python. Run through multiple worlds while jumping and
             sliding off walls, collecting orbs, and killing ogres for coins.
             Spend your coins at the shop to level up your character. You can
             save and load your games, talk to NPCs, and use two different
-            attacks. As you level up you will be able to complete the level
-            faster and faster. Keep playing until you can acheieve a gold medal
-            on each level!
+            attacks. As you level up you will be able to complete the levels
+            faster and faster. Keep playing until you achieve a gold medal on
+            each level!
           </p>
           <div className="projectPage__description__links">
             <h3 className="projectPage__description__links__link">View Live</h3>

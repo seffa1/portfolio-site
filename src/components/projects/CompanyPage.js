@@ -27,7 +27,7 @@ function CompanyPage() {
             is not responsive. I wanted to show them what a responsive webpage
             looked like so I remade their landed page myself. It is mobile
             friendly with collapsing hamburger menus done in vanilla javascript.
-            There is also a cool automatic changing carasoul wheel.
+            There is also an automatic changing carousel wheel.
           </p>
           <div className="projectPage__description__links">
             <a

@@ -28,8 +28,8 @@ function RaspberryPi() {
             This is a TKinter python GUI which connects to an external SQL
             database. A raspberry pi script collects temperature and RH data and
             dumps it to the SQL database. The application then displays the
-            latest data, as well as graphs recent data. You can select and start
-            and end date with the calender, and graph historical data. There is
+            latest data, as well as graphs recent data. You can select the start
+            and end date with a calender, and graph historical data. There is
             currently some issues on apple, as I originally made this with a
             windows machine. This is a project I will eventually re-do on a web
             platform.
