@@ -1,5 +1,5 @@
 # Welcome to my website!
-And if you are hiring, please let me know!
+I am currently seeking a position in web development. Please feel free to contact me: sameffa1@gmail.com
 
 
 ## To start the react app
