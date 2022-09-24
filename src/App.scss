@@ -435,8 +435,8 @@ small,
       }
 
       &-hover:hover {
-        color: $color-green-4;
-        font-size: 3rem;
+        color: $color-icons-hover;
+        font-size: 2rem;
         background: rgba(255, 255, 255, 0.8);
       }
     }
@@ -683,16 +683,16 @@ small,
   background: $color-parallax;
 
   &__backButton {
-    font-size: 4rem;
-    color: $color-new-1;
-    margin-left: 6rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: $color-icons;
+    margin-left: 2rem;
+    margin-top: 1rem;
     transition: all 0.2s ease;
   }
 
   &__backButton:hover {
-    transform: scale(1.1) translateY(-5px);
+    transform: scale(1.1);
+    color: $color-icons-hover;
   }
 
   &__img {
@@ -717,33 +717,38 @@ small,
       justify-content: left;
       gap: 1rem;
       text-transform: uppercase;
+      color: $color-icons-hover;
     }
 
     &__title {
       margin-top: 1rem;
+      color: white;
+      font-weight: 200;
     }
 
     &__p {
       margin-top: 1.7rem;
-      margin-left: 6rem;
+      margin-bottom: 2rem;
+      color: rgba(white, 0.7);
+      font-weight: 300;
+      text-align: left;
       margin-bottom: 2rem;
     }
 
     &__links {
       display: flex;
-      gap: 2rem;
 
       &__link {
         text-decoration: none;
-        color: $color-primary;
-        font-size: 2rem;
+        color: $color-icons-hover;
+        font-size: 1.6rem;
         font-weight: 300;
         transition: all 0.3s ease;
         padding: 0.5rem;
         border-radius: 20px;
       }
       &__link:hover {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -769,16 +774,6 @@ small,
     &__description {
       &__title {
         font-size: 3rem;
-      }
-
-      &__p {
-        font-size: 1.2rem;
-      }
-
-      &__links {
-        &__link {
-          font-size: 2rem;
-        }
       }
     }
   }

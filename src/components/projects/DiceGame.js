@@ -8,7 +8,7 @@ function DiceGame() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -22,7 +22,7 @@ function DiceGame() {
             <li>Javascript</li>
             <li>|</li>
           </ul>
-          <h1 className="projectPage__description__title">Dice Game Clone</h1>
+          <h3 className="projectPage__description__title">Dice Game Clone</h3>
           <p className="projectPage__description__p">
             This is a clone of a minigame from the videogame "Cult of the Lamb".
             This is meant for two players to play locally currently. For rules

@@ -6,7 +6,7 @@ function RaspberryPi() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -21,9 +21,9 @@ function RaspberryPi() {
             <li>|</li>
             <li>TKinter</li>
           </ul>
-          <h1 className="projectPage__description__title">
+          <h3 className="projectPage__description__title">
             Raspberry Pi Datalogger
-          </h1>
+          </h3>
           <p className="projectPage__description__p">
             This is a TKinter python GUI which connects to an external SQL
             database. A raspberry pi script collects temperature and RH data and

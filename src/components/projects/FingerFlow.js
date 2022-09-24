@@ -8,7 +8,7 @@ function FingerFlow() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -21,7 +21,7 @@ function FingerFlow() {
             <li>|</li>
             <li>Algorithms</li>
           </ul>
-          <h1 className="projectPage__description__title">2D Puzzler Game</h1>
+          <h3 className="projectPage__description__title">2D Puzzler Game</h3>
           <p className="projectPage__description__p">
             Control two columns which through big rocks into the air. Throw the
             rocks up as pillars come flying at you. Each time a rock gets over a

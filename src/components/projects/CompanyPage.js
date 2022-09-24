@@ -8,7 +8,7 @@ function CompanyPage() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -19,9 +19,9 @@ function CompanyPage() {
             <li>|</li>
             <li>CSS</li>
           </ul>
-          <h1 className="projectPage__description__title">
+          <h3 className="projectPage__description__title">
             Company Website Remake
-          </h1>
+          </h3>
           <p className="projectPage__description__p">
             The current company I work at has a 20 year old static website which
             is not responsive. I wanted to show them what a responsive webpage

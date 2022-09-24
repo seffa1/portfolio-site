@@ -8,7 +8,7 @@ function TwitterClone() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -29,9 +29,9 @@ function TwitterClone() {
             <li>|</li>
             <li>User Athentication</li>
           </ul>
-          <h1 className="projectPage__description__title">
+          <h3 className="projectPage__description__title">
             Full Stack Twitter Clone{" "}
-          </h1>
+          </h3>
           <p className="projectPage__description__p">
             This project is still in progress. You can hit "OFFLINE ACCESS FOR
             VIEW ONLY" to get passed authentication for now. I wanted to build a

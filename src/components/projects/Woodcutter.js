@@ -11,7 +11,7 @@ function Woodcutter() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -24,7 +24,7 @@ function Woodcutter() {
             <li>|</li>
             <li>Algorithms</li>
           </ul>
-          <h1 className="projectPage__description__title">Platformer RPG</h1>
+          <h3 className="projectPage__description__title">Platformer RPG</h3>
           <p className="projectPage__description__p">
             This is a fully fledges platforming RPG adventure game in about 6000
             lines of python. Run through mulitple worlds while jumping and

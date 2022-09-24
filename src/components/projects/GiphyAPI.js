@@ -8,7 +8,7 @@ function GiphyAPI() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -21,7 +21,7 @@ function GiphyAPI() {
             <li>|</li>
             <li>API Consumption</li>
           </ul>
-          <h1 className="projectPage__description__title">Giphy API Page</h1>
+          <h3 className="projectPage__description__title">Giphy API Page</h3>
           <p className="projectPage__description__p">
             This simple page lets you enter a search term, and submit that term
             to the giphy API. This returns gifs related to your search for your

@@ -8,7 +8,7 @@ function NewsAPI() {
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">
-        <i class="fa-solid fa-arrow-left-long projectPage__backButton"> Back</i>
+        <i class="fa-solid fa-arrow-left-long projectPage__backButton" />
       </Link>
       <article className="projectPage__container">
         <div className="projectPage__description-container">
@@ -25,7 +25,7 @@ function NewsAPI() {
             <li>|</li>
             <li>Design Clone</li>
           </ul>
-          <h1 className="projectPage__description__title">Live News Site</h1>
+          <h3 className="projectPage__description__title">Live News Site</h3>
           <p className="projectPage__description__p">
             This fictional news site was cloned from a design on Dribble.com. I
             used the News API to feed live news articles, sorted by topic. The
