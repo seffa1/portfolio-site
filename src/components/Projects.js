@@ -73,6 +73,11 @@ function Projects() {
             <div className="About__heading__line" />
           </div>
 
+          {/* Header */}
+          <p className="About__paragraph">
+            Click on any project to learn more.
+          </p>
+
           {/* Project Two */}
           <div className="Project__container">
             <div className="Project__container__img-container">

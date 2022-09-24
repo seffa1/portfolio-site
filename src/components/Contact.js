@@ -14,9 +14,19 @@ function Contact() {
           feel free to contact me via email below.
         </p>
 
-        <a className="Contact__email" href="mailto:sameffa1@gmail.com">
-          Email Me
-        </a>
+        <div className="Contact__container">
+          <a className="Contact__email" href="mailto:sameffa1@gmail.com">
+            Email Me
+          </a>
+
+          <a
+            className="Contact__email"
+            href="https://github.com/seffa1"
+            target="_blank"
+          >
+            <i class="devicon-github-original Contact__logo"></i>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -462,6 +462,18 @@ small,
   max-width: $max-width;
   z-index: 1;
 
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__header {
     color: $color-light;
     margin-bottom: 2rem;
