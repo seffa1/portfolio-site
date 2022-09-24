@@ -5,7 +5,7 @@ function About() {
     <section className="About" id="About">
       <div className="About__background">
         <div className="About__heading">
-          <h4 className="About__heading__number">04.</h4>
+          <h4 className="About__heading__number">01.</h4>
           <h3 className="About__heading__title">About Me</h3>
           <div className="About__heading__line" />
         </div>

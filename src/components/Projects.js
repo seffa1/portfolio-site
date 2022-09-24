@@ -16,7 +16,7 @@ function Projects() {
         {/* Project One */}
         <div className="About__background">
           <div className="About__heading">
-            <h4 className="About__heading__number">02.</h4>
+            <h4 className="About__heading__number">03.</h4>
             <h3 className="About__heading__title">Web Projects</h3>
             <div className="About__heading__line" />
           </div>
@@ -63,7 +63,7 @@ function Projects() {
         {/* Project One */}
         <div className="About__background">
           <div className="About__heading">
-            <h4 className="About__heading__number">03.</h4>
+            <h4 className="About__heading__number">04.</h4>
             <h3 className="About__heading__title">Python Projects</h3>
             <div className="About__heading__line" />
           </div>

@@ -107,9 +107,9 @@ function App() {
               />
               {/* <Hero scroll={offsetY} /> */}
               <HeroStatic />
+              <About />
               <Skills />
               <Projects />
-              <About />
               <Contact />
               <Footer />
             </div>
