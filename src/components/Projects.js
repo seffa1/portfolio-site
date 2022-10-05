@@ -1,13 +1,15 @@
 import React from "react";
-import diceGame from "../images/diceGame.png";
-import twitterHome from "../images/twitter_home.png";
-import newsSite from "../images/newsSite.png";
-import woodcutter4 from "../images/woodcutter1.png";
-import fingerFlow from "../images/fingerFlow.png";
-import raspberryPi from "../images/raspberryPiLogger.png";
-import company from "../images/companyRemake.png";
-import giphy from "../images/giphy.png";
 import { Link } from "react-router-dom";
+
+// TODO: Replace all png with webp
+import company from "../images/companyRemake.webp";
+import diceGame from "../images/diceGame.webp";
+import fingerFlow from "../images/fingerFlow.webp";
+import giphy from "../images/giphy.webp";
+import newsSite from "../images/newsSite.png";
+import raspberryPi from "../images/raspberryPiLogger.png";
+import twitterHome from "../images/twitter_home.png";
+import woodcutter4 from "../images/woodcutter1.png";
 
 function Projects() {
   return (

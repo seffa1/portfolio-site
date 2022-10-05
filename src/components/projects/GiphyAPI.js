@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import giphy from "../../images/giphy.png";
-import giphy2 from "../../images/giphy2.png";
+import giphy from "../../images/giphy.webp";
+import giphy2 from "../../images/giphy2.webp";
+// TODO: Replace with webp
 import giphy3 from "../../images/giphy3.png";
 
 function GiphyAPI() {
