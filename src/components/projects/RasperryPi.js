@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import raspberryPi from "../../images/raspberryPiLogger.png";
+import raspberryPi from "../../images/raspberryPiLogger.webp";
 
 function RaspberryPi() {
   return (

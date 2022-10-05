@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import twitterHome from "../../images/twitter_home.png";
-import twitterMain from "../../images/twitter_main.png";
-import twitterSignIn from "../../images/twitterSignIn.png";
+
+import twitterHome from "../../images/twitter_home.webp";
+import twitterMain from "../../images/twitter_main.webp";
+import twitterSignIn from "../../images/twitterSignIn.webp";
 
 function TwitterClone() {
   return (

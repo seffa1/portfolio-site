@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import woodcutter from "../../images/woodcutter.png";
-import woodcutter1 from "../../images/woodcutter1.png";
-import woodcutter2 from "../../images/woodcutter2.png";
-import woodcutter3 from "../../images/woodcutter3.png";
-import woodcutter4 from "../../images/woodcutter4.png";
-import woodcutter5 from "../../images/woodcutter5.png";
+
+import woodcutter from "../../images/woodcutter.webp";
+import woodcutter1 from "../../images/woodcutter1.webp";
+import woodcutter2 from "../../images/woodcutter2.webp";
+import woodcutter3 from "../../images/woodcutter3.webp";
+import woodcutter4 from "../../images/woodcutter4.webp";
+import woodcutter5 from "../../images/woodcutter5.webp";
 
 function Woodcutter() {
   return (

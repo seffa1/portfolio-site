@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import newsSite from "../../images/newsSite.png";
-import newsSiteMobile from "../../images/newsSiteMobile.png";
-import newsSiteFooter from "../../images/newsSiteFooter.png";
+import newsSite from "../../images/newsSite.webp";
+import newsSiteMobile from "../../images/newsSiteMobile.webp";
+import newsSiteFooter from "../../images/newsSiteFooter.webp";
 
 function NewsAPI() {
   return (

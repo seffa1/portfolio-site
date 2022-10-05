@@ -6,10 +6,10 @@ import company from "../images/companyRemake.webp";
 import diceGame from "../images/diceGame.webp";
 import fingerFlow from "../images/fingerFlow.webp";
 import giphy from "../images/giphy.webp";
-import newsSite from "../images/newsSite.png";
-import raspberryPi from "../images/raspberryPiLogger.png";
-import twitterHome from "../images/twitter_home.png";
-import woodcutter4 from "../images/woodcutter1.png";
+import newsSite from "../images/newsSite.webp";
+import raspberryPi from "../images/raspberryPiLogger.webp";
+import twitterHome from "../images/twitter_home.webp";
+import woodcutter4 from "../images/woodcutter1.webp";
 
 function Projects() {
   return (

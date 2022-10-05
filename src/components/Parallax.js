@@ -1,11 +1,11 @@
 import React from "react";
-import img1 from "../images/rocks/1.png";
-import img2 from "../images/rocks/2.png";
-import img3 from "../images/rocks/3.png";
-import img4 from "../images/rocks/4.png";
-import img5 from "../images/rocks/5.png";
-import img6 from "../images/rocks/6.png";
-import img7 from "../images/rocks/7.png";
+import img1 from "../images/rocks/1.webp";
+import img2 from "../images/rocks/2.webp";
+import img3 from "../images/rocks/3.webp";
+import img4 from "../images/rocks/4.webp";
+import img5 from "../images/rocks/5.webp";
+import img6 from "../images/rocks/6.webp";
+import img7 from "../images/rocks/7.webp";
 
 function Parallax(props) {
   // Translate X's
