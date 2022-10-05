@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import woodcutter from "../../images/woodcutter.webp";
@@ -9,6 +9,11 @@ import woodcutter4 from "../../images/woodcutter4.webp";
 import woodcutter5 from "../../images/woodcutter5.webp";
 
 function Woodcutter() {
+  // manually scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="TwitterClone projectPage">
       <Link to="/">

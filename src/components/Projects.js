@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// TODO: Replace all png with webp
 import company from "../images/companyRemake.webp";
 import diceGame from "../images/diceGame.webp";
 import fingerFlow from "../images/fingerFlow.webp";
