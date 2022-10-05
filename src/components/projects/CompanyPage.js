@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import company from "../../images/companyRemake.png";
-import companyMobile from "../../images/companyRemakeMobile.png";
-import company2 from "../../images/companyRemake2.png";
+import company from "../../images/companyRemake.webp";
+import companyMobile from "../../images/companyRemakeMobile.webp";
+import company2 from "../../images/companyRemake2.webp";
 
 function CompanyPage() {
   return (

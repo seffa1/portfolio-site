@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import diceGame from "../../images/diceGame.png";
-import diceGameTwo from "../../images/diceGame2.png";
-import diceGameThree from "../../images/diceGame3.png";
+
+import diceGame from "../../images/diceGame.webp";
+import diceGameThree from "../../images/diceGame3.webp";
+import diceGameTwo from "../../images/diceGame2.webp";
 
 function DiceGame() {
   return (

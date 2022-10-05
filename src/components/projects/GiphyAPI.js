@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import giphy from "../../images/giphy.png";
-import giphy2 from "../../images/giphy2.png";
-import giphy3 from "../../images/giphy3.png";
+
+import giphy from "../../images/giphy.webp";
+import giphy2 from "../../images/giphy2.webp";
+import giphy3 from "../../images/giphy3.webp";
 
 function GiphyAPI() {
   return (

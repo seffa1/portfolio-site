@@ -1,34 +1,29 @@
 import "./App.scss";
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import HeroStatic from "./components/HeroStatic";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Page Components
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import SideLinks from "./components/SideLinks";
-import Projects from "./components/Projects";
+import HeroStatic from "./components/HeroStatic";
+import Navbar from "./components/Navbar";
 import Parallax from "./components/Parallax";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Projects from "./components/Projects";
+import SideLinks from "./components/SideLinks";
 import Skills from "./components/Skills";
 
 // Import Project pages
-import TwitterClone from "./components/projects/TwitterClone";
 import CompanyPage from "./components/projects/CompanyPage";
 import DiceGame from "./components/projects/DiceGame";
 import FingerFlow from "./components/projects/FingerFlow";
 import GiphyAPI from "./components/projects/GiphyAPI";
 import NewsAPI from "./components/projects/NewsApi";
 import RaspberryPi from "./components/projects/RasperryPi";
+import TwitterClone from "./components/projects/TwitterClone";
 import Woodcutter from "./components/projects/Woodcutter";
 
 function App() {
-  // Blur toggler
-  const [blur, setBlur] = useState(false);
-  function toggleBlur() {
-    setBlur((prev) => !prev);
-  }
-  const blurStyle = !blur ? { display: "none" } : { display: "block" };
-
   // Hold scrolling data
   const [scrollDirection, setScrollDirection] = useState("up");
   const [offsetY, setOffsetY] = useState(0);
@@ -42,6 +37,7 @@ function App() {
 
   // determine scroll direction
   useEffect(() => {
+    // sets the scroll direction
     if (offsetY < prevOffsetY) setScrollDirection("up");
     if (offsetY > prevOffsetY) setScrollDirection("down");
     setPrevOffsetY(offsetY);
@@ -50,7 +46,7 @@ function App() {
   // create scroll listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // manually scroll to top on page load
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -90,12 +86,8 @@ function App() {
           element={
             <div className="App">
               {/* Parallax background */}
-              {/* <Background scroll={offsetY} rectData={rectData} /> */}
               <Parallax scroll={offsetY} />
               <SideLinks />
-
-              {/* Blur for mobile nav bar */}
-              <div className="Blur" style={blurStyle} />
 
               {/* Content */}
               <Navbar

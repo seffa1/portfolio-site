@@ -8,39 +8,26 @@ import img6 from "../images/rocks/6.png";
 import img7 from "../images/rocks/7.png";
 
 function Parallax(props) {
-  let initialSpeed = 1;
-  let difference = 0.2;
-
-  let style0 = {
-    // transform: `translateY(${100}vh)`,
-    // transform: `translateY(-${
-    //   props.scroll * (initialSpeed + difference * 6)
-    // }px)`,
-  };
-  let style1 = {
-    // transform: `translateY(-${props.scroll * initialSpeed}px)`,
-  };
+  // Translate X's
   let style2 = {
-    transform: `translateX(-${props.scroll * (initialSpeed * 0.4)}px)`,
+    transform: `translateX(-${props.scroll * 0.4}px)`,
   };
   let style3 = {
-    transform: `translateX(${props.scroll * (initialSpeed * 0.8)}px)`,
-  };
-  let style4 = {
-    transform: `translateY(${props.scroll * (initialSpeed * 0.6)}px)`,
-  };
-  let style5 = {
-    transform: `translateY(${props.scroll * (initialSpeed * 0.4)}px)`,
+    transform: `translateX(${props.scroll * 0.8}px)`,
   };
   let style6 = {
-    transform: `translateX(-${
-      props.scroll * (initialSpeed + difference * 5)
-    }px)`,
+    transform: `translateX(-${props.scroll * 1}px)`,
   };
   let style7 = {
-    transform: `translateX(${
-      props.scroll * (initialSpeed + difference * 6)
-    }px)`,
+    transform: `translateX(${props.scroll * 1.2}px)`,
+  };
+
+  // Translate Y's
+  let style4 = {
+    transform: `translateY(${props.scroll * 0.6}px)`,
+  };
+  let style5 = {
+    transform: `translateY(${props.scroll * 0.4}px)`,
   };
 
   return (

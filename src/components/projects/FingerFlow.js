@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import fingerFlow from "../../images/fingerFlow.png";
-import fingerFlow2 from "../../images/fingerFlow2.png";
-import fingerFlow3 from "../../images/fingerFlow3.png";
+import fingerFlow from "../../images/fingerFlow.webp";
+import fingerFlow2 from "../../images/fingerFlow2.webp";
+import fingerFlow3 from "../../images/fingerFlow3.webp";
 
 function FingerFlow() {
   return (
