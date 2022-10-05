@@ -1,16 +1,6 @@
+// COLORS
 $color-primary: #02010a;
-$color-secondary: #6768c0;
-$color-tertiary: #140152;
-$color-quaternary: #22007c;
 $color-light: white;
-$color-light-1: white;
-$color-light-2: #5431b6;
-
-$color-green-1: #071725;
-$color-green-2: #1d345e;
-$color-green-4: #447ba5;
-$color-green-3: #529fc0;
-
 $color-parallax: #428998;
 
 // New color scheme
@@ -21,7 +11,7 @@ $color-icons: #372343;
 $color-icons-hover: #201228;
 
 // Page layout
-$section-margin: 5rem;
+$section-margin: 10rem;
 $max-width: 1100px;
 $margin-sides-1: 8rem;
 $margin-sides-2: 4rem;
@@ -80,21 +70,20 @@ small,
 }
 
 .App {
-  text-align: center;
-
-  overflow: hidden;
+  align-items: center;
   background: $color-parallax;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .Blur {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
   backdrop-filter: blur(6px);
+  height: 100%;
+  position: absolute;
+  width: 100vw;
   z-index: 9;
 }
 
@@ -107,12 +96,12 @@ small,
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
   display: flex;
+  padding: 0 2rem;
   position: fixed;
   top: 0;
   transition: all 0.6s ease;
   width: 100%;
   z-index: 99;
-  padding: 0 2rem;
 
   // Controlled via media query below
 
@@ -120,8 +109,8 @@ small,
     transform: translateY(0%);
   }
   &--down {
-    transform: translateY(-100%);
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    transform: translateY(-100%);
   }
 
   &__icon {
@@ -147,24 +136,23 @@ small,
 
   &__li {
     background: $color-icons;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     list-style: none;
     padding: 0.5rem 1.5rem;
     transition: background 0.2s ease;
 
     &__link {
-      text-decoration: none;
       color: white;
       font-size: $font-navbar;
       font-weight: 400;
+      text-decoration: none;
     }
   }
 
   &__li:hover {
     background: $color-icons-hover;
     cursor: pointer;
-    // padding: 0.5rem 3rem;
   }
 }
 
@@ -177,11 +165,11 @@ small,
     }
 
     &__ul {
-      justify-content: center;
       align-items: center;
       flex-grow: 1;
-      margin: 0.5rem 0.3rem;
       gap: 0.4rem;
+      justify-content: center;
+      margin: 0.5rem 0.3rem;
     }
 
     &__li {
@@ -191,83 +179,11 @@ small,
   }
 }
 
-// Hero
-.Hero {
-  display: grid;
-  gap: 20px 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "Hero__intro Hero__intro Hero__name Hero__name Hero__name"
-    "Hero__intro Hero__intro Hero__name Hero__name Hero__name"
-    "Hero__I Hero__Looking Hero__Looking Hero__Looking Hero__Looking"
-    "Hero__I Hero__Looking Hero__Looking Hero__Looking Hero__Looking"
-    "Hero__Entry Hero__Entry Hero__Entry . .";
-  margin-top: 20rem;
-  margin-right: $margin-sides-1;
-  margin-left: $margin-sides-1;
-  margin-bottom: $section-margin;
-  max-width: $max-width;
-  z-index: 1;
-
-  &__intro,
-  &__name,
-  &__I,
-  &__Looking,
-  &__Entry {
-    border-radius: 1rem;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
-  }
-
-  &__intro:hover,
-  &__name:hover,
-  &__I:hover,
-  &__Looking:hover,
-  &__Entry:hover {
-    // letter-spacing: 1rem;
-  }
-
-  &__intro {
-    align-self: flex-end;
-    background-color: $color-new-1;
-    color: $color-light;
-    font-size: 2rem;
-    grid-area: Hero__intro;
-  }
-
-  &__name {
-    background: $color-new-2;
-    color: $color-light;
-    grid-area: Hero__name;
-  }
-
-  &__I {
-    background: $color-new-3;
-    color: $color-light;
-    font-size: 2.5rem;
-    grid-area: Hero__I;
-  }
-
-  &__Looking {
-    background: $color-new-1;
-    color: $color-light;
-    font-weight: 400;
-    grid-area: Hero__Looking;
-  }
-
-  &__Entry {
-    background: $color-new-2;
-    color: $color-light;
-    font-weight: 200;
-    grid-area: Hero__Entry;
-  }
-}
-
 .HeroStatic {
-  margin-top: 20rem;
-  margin-bottom: 30rem;
-  z-index: 9;
   color: white;
+  margin-bottom: 30rem;
+  margin-top: 20rem;
+  z-index: 9;
 
   &__title {
     text-shadow: -1px 2px 6px $color-icons-hover;
@@ -281,9 +197,9 @@ small,
   }
 
   &__link {
+    color: $color-primary;
     font-size: 5rem;
     text-decoration: none;
-    color: $color-primary;
     transition: all 0.3s ease;
   }
   &__link:hover {
@@ -302,103 +218,78 @@ small,
   }
 }
 
+.SectionContainer {
+  // background: rgba($color-new-1, 0.3);
+  // box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+  margin-bottom: $section-margin;
+  margin-left: $margin-sides-1;
+  margin-right: $margin-sides-1;
+  max-width: $max-width;
+  padding: 2rem;
+  width: 100%;
+  z-index: 1;
+}
+.SectionHeading {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+
+  &__number {
+    color: $color-light;
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    color: $color-light;
+    margin-left: 2rem;
+    white-space: nowrap;
+  }
+  &__line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 80%;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  &__paragraph {
+    color: rgba(white, 0.7);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SectionHeading {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+// About Me
+#About {
+  margin-top: 60rem;
+}
+
 // Skills
 .Skills {
   width: 100%;
   z-index: 99;
   &__ul {
     display: flex;
-    list-style: none;
     flex-wrap: wrap;
+    list-style: none;
   }
   &__li {
-    font-size: 5rem;
     // color: $color-new-1;
     flex-grow: 1;
-  }
-}
-
-// TODO: Move the layout away from the design
-// About (also used in other components for the container size)
-#About {
-  margin-top: 30rem;
-}
-
-.About {
-  padding-top: 2rem;
-  margin-top: 0rem;
-  margin-right: $margin-sides-1;
-  margin-left: $margin-sides-1;
-  margin-bottom: $section-margin;
-  max-width: $max-width;
-  z-index: 1;
-
-  &__background {
-    border-radius: 1rem;
-    padding: 2rem;
-    // background: rgba($color-new-1, 0.3);
-    // box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
-  }
-
-  &__heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-
-    &__number {
-      color: $color-light;
-      font-size: 1.2rem;
-    }
-    &__title {
-      color: $color-light;
-      margin-left: 2rem;
-      white-space: nowrap;
-    }
-
-    &__line {
-      width: 100%;
-      height: 80%;
-      margin-left: 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    &__line--left {
-      margin-right: 20px;
-      width: 100%;
-      height: 80%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-  }
-  &__paragraph {
-    color: rgba(white, 0.7);
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .About {
-    &__heading {
-      &__title {
-        font-size: 2rem;
-      }
-    }
+    font-size: 5rem;
   }
 }
 
 // Projects
-
 .Project {
-  margin-bottom: 1rem;
-  padding-top: 8rem;
-  margin-top: 0rem;
-  margin-right: $margin-sides-1;
-  margin-left: $margin-sides-1;
-  margin-bottom: $section-margin;
-  max-width: $max-width;
-  z-index: 1;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -406,9 +297,9 @@ small,
     justify-content: center;
 
     &__header {
+      align-self: left;
       color: $color-light;
       width: 100%;
-      align-self: left;
     }
 
     &__img-container {
@@ -419,25 +310,25 @@ small,
       width: 500px;
 
       &-hover {
-        display: flex;
-        justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         background: rgba(255, 255, 255, 0);
         color: rgba(255, 255, 255, 0);
+        display: flex;
         font-size: 1rem;
-        transition: all 0.2s ease;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
         text-decoration: none;
+        top: 0;
+        transition: all 0.2s ease;
+        width: 100%;
       }
 
       &-hover:hover {
+        background: rgba(255, 255, 255, 0.8);
         color: $color-icons-hover;
         font-size: 2rem;
-        background: rgba(255, 255, 255, 0.8);
       }
     }
   }
@@ -454,24 +345,16 @@ small,
 
 // Contact Me
 .Contact {
-  padding-top: 8rem;
-  margin-top: 0rem;
-  margin-bottom: $section-margin;
-  margin-right: $margin-sides-1;
-  margin-left: $margin-sides-1;
-  max-width: $max-width;
-  z-index: 1;
-
   &__logo {
     font-size: 2rem;
   }
 
   &__container {
+    align-items: center;
     display: flex;
     gap: 2rem;
-    width: 100%;
     justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   &__header {
@@ -485,13 +368,13 @@ small,
   }
 
   &__email {
-    text-decoration: none;
+    background: $color-icons;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     color: $color-light;
     font-size: 1.5rem;
-    background: $color-icons;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    border-radius: 100px;
     padding: 1rem 2.5rem;
+    text-decoration: none;
     transition: all 0.2s ease;
   }
 
@@ -513,21 +396,20 @@ small,
 
 // Footer
 .Footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background: $color-new-1;
+  display: flex;
+  justify-content: center;
   padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
-
+  width: 100%;
   z-index: 1;
 
   &__a {
-    text-decoration: none;
     color: rgba($color-light, 0.5);
     font-weight: 300;
+    text-decoration: none;
     transition: all 0.2s ease;
   }
 
@@ -539,21 +421,20 @@ small,
 // Side Links
 .SideLinks {
   &__email {
+    align-items: center;
+    bottom: (25px);
     display: flex;
     flex-direction: row;
-    align-items: center;
     position: fixed;
-    bottom: (25px);
     right: 30px;
     writing-mode: vertical-rl;
     z-index: 1;
 
     &__a {
+      color: rgba($color-light, 0.5);
       font-size: 1.25rem;
       letter-spacing: 0.1em;
-
       text-decoration: none;
-      color: rgba($color-light, 0.5);
       transition: all 0.2s ease;
     }
 
@@ -562,23 +443,16 @@ small,
     }
 
     &__line {
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
       color: white;
       height: 100px;
       margin-top: 15px;
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
     }
   }
 }
 
-// Media Query
+// Media Queries
 @media screen and (max-width: 1100px) {
-  .About,
-  .Contact,
-  .Project {
-    margin-left: $margin-sides-2;
-    margin-right: $margin-sides-2;
-  }
-
   .SideLinks__email {
     right: 15px;
   }
@@ -606,32 +480,6 @@ small,
 
 // Mobile formatting
 @media screen and (max-width: 780px) {
-  .Hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 6rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .Hero > * {
-    align-self: stretch;
-  }
-
-  .About,
-  .Contact,
-  .Project {
-    margin-left: $margin-sides-3;
-    margin-right: $margin-sides-3;
-    padding: 0;
-  }
-
-  .About__background {
-    border-radius: 0;
-  }
-
   .SideLinks {
     display: none;
   }
@@ -639,12 +487,12 @@ small,
 
 // Background Parallax
 .Parallax__img {
-  top: 0;
-  left: 0;
   height: 100vh;
-  position: absolute;
-  width: 100%;
+  left: 0;
   min-width: 1100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 1;
 
   &__color {
@@ -660,68 +508,27 @@ small,
   }
 }
 
-.Background {
-  background-color: $color-primary;
-  height: 100vh;
-  position: absolute;
-  width: 100%;
-  z-index: -99999999;
-
-  &__rect {
-    filter: blur(4px);
-    border-radius: 2rem;
-
-    &--big {
-      background-color: $color-green-1;
-      height: 1500px;
-      left: 20%;
-      position: absolute;
-      top: 5%;
-      width: 25%;
-      z-index: -99;
-    }
-    &--medium {
-      background-color: $color-green-3;
-      height: 20%;
-      left: 65%;
-      position: absolute;
-      top: 15%;
-      width: 15%;
-      z-index: -98;
-    }
-    &--small {
-      background-color: $color-green-2;
-      height: 10%;
-      left: 40%;
-      position: absolute;
-      top: 25%;
-      width: 35%;
-      z-index: -97;
-    }
-  }
-}
-
 // Project page
 .projectPage {
   background: $color-parallax;
 
   &__backButton {
-    font-size: 3rem;
     color: $color-icons;
+    font-size: 3rem;
     margin-left: 2rem;
     margin-top: 1rem;
     transition: all 0.2s ease;
   }
 
   &__backButton:hover {
-    transform: scale(1.1);
     color: $color-icons-hover;
+    transform: scale(1.1);
   }
 
   &__img {
-    width: 40%;
-    object-fit: contain;
     margin: 2rem;
+    object-fit: contain;
+    width: 40%;
   }
 
   &__container {
@@ -734,41 +541,41 @@ small,
     }
 
     &__ul {
+      color: $color-icons-hover;
       display: flex;
       flex-wrap: wrap;
-      list-style: none;
-      justify-content: left;
       gap: 1rem;
+      justify-content: left;
+      list-style: none;
       text-transform: uppercase;
-      color: $color-icons-hover;
     }
 
     &__title {
-      margin-top: 1rem;
       color: white;
       font-weight: 200;
+      margin-top: 1rem;
     }
 
     &__p {
-      margin-top: 1.7rem;
-      margin-bottom: 2rem;
       color: rgba(white, 0.7);
       font-weight: 300;
-      text-align: left;
       margin-bottom: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 1.7rem;
+      text-align: left;
     }
 
     &__links {
       display: flex;
 
       &__link {
-        text-decoration: none;
+        border-radius: 20px;
         color: $color-icons-hover;
         font-size: 1.6rem;
         font-weight: 300;
-        transition: all 0.3s ease;
         padding: 0.5rem;
-        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.3s ease;
       }
       &__link:hover {
         font-size: 1.8rem;
@@ -777,17 +584,17 @@ small,
   }
 
   &__img-container {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
     padding-bottom: 2rem;
 
     &__img {
-      width: 70%;
       object-fit: contain;
+      width: 70%;
     }
   }
 }
@@ -809,14 +616,14 @@ small,
       margin-right: 5rem;
     }
     &__container {
+      align-items: center;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       margin: 0;
     }
     &__img {
-      width: 70%;
       object-fit: contain;
+      width: 70%;
     }
     &__img-container {
       margin-top: 0;
@@ -831,11 +638,11 @@ small,
         justify-content: center;
       }
       &-container {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 0.5rem;
-        align-items: center;
         justify-content: right;
+        margin: 0.5rem;
       }
       &__p {
         margin: 1rem;
