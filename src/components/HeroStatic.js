@@ -7,13 +7,6 @@ function HeroStatic() {
       <h2 className="HeroStatic__subtitle animate delay-4 spin">
         web developer
       </h2>
-      {/* <a
-        className="HeroStatic__a"
-        href="https://github.com/seffa1"
-        target="_blank"
-      >
-        <i class="devicon-github-original-wordmark HeroStatic__link"></i>
-      </a> */}
     </section>
   );
 }
