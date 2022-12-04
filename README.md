@@ -1,5 +1,5 @@
 # Welcome to my website!
-I am currently seeking a position in web development. Please feel free to contact me: sameffa1@gmail.com
+http://sameffa.com
 
 
 ## To start the react app
