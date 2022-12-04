@@ -1,5 +1,5 @@
 # Welcome to my website!
-http://sameffa.com
+http://www.sameffa.com
 
 
 ## To start the react app
